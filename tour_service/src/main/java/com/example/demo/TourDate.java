@@ -7,13 +7,14 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class TourDate {
+public class person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String venue;
-    private float price;
-    private String city;
-    private String state;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private int age;
+    private int zipcode;
 }

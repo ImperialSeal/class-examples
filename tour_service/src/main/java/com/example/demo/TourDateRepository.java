@@ -4,7 +4,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@RepositoryRestResource(collectionResourceRel = "tourdates", path = "tour_dates")
-public interface TourDateRepository extends JpaRepository<TourDate, Long>{
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+@RepositoryRestResource(collectionResourceRel = "person", path = "person")
+public interface TourDateRepository extends JpaRepository<person, Long>{
     
 }
+  
